@@ -6,10 +6,11 @@
 
 def file_sum(infile):
     """Sums values in file and writes sum to sum.txt file"""
+    sums = 0
     with open('numberlist.txt', 'r') as infile:
         for numbers in infile:
-            sum += float(numbers)
+            sums += float(numbers)
     with open('sum.txt', 'w') as outfile:
-        outfile.write(float(sum))
-        return sum()
+        outfile.write(str(sums))
+        return sums
 
